@@ -28,6 +28,10 @@ app.get('/message', (req, res) => {
 app.post('/api', (req, res) => {
     res.send("Received post request!");
 });
+// New route /test returning "Server is operational"
+app.get('/test', (req, res) => {
+    res.send('Server is operational');
+});
 
 // run our server to listen at the port we defined
 app.listen(port, () => {
